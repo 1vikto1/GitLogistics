@@ -7,6 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="CadetBlue">
+            <TextBlock FontWeight="Bold" Text="Logistic" Margin="0" />
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Background="CadetBlue">
+            <Image Source="Images\IconTracs.png" Width="75" Height="80"/>
+            <Image Source="Images\IconCargos.png" Width="75" Height="80"/>
+            <Image Source="Images\IconMessenger.png" Width="75" Height="80"/>
+            <Image Source="Images\IconDocuments.png" Width="75" Height="80"/>
+        </StackPanel>
+
+        <StackPanel Background="CadetBlue" Grid.Column="1" Orientation="Horizontal">
+
+        </StackPanel>
         
+        
+
     </Grid>
 </Window>

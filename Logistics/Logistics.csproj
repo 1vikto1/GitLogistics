@@ -99,5 +99,16 @@
     <Folder Include="ConnectDataBase\" />
     <Folder Include="Pages\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IconCargos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IconDocuments.png" />
+    <Resource Include="Images\IconMessenger.png" />
+    <Resource Include="Images\IconTracs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\IconUsers.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
