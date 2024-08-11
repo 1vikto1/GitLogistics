@@ -64,6 +64,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Model\ModelUsers.cs" />
+    <Compile Include="ViewModel\Class1.cs" />
     <Compile Include="ViewModel\ClassMainWindow.cs" />
     <Compile Include="ViewModel\RelayComand.cs" />
     <Compile Include="View\MainWindow.xaml.cs">

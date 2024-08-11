@@ -3,9 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Logistics"
+        xmlns:local="clr-namespace:Logistics" 
+        xmlns:classes="clr-namespace:Logistics.Classes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="490" Width="800">
+        Title="MainWindow" Height="490" Width="800"
+        
+        Background="Orange">
+
+    <Window.DataContext>
+        <classes:ClassMainWindow/>
+    </Window.DataContext>
     
     <Grid>
 
@@ -15,7 +22,7 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="82"/>
+            <ColumnDefinition Width="100"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
@@ -24,35 +31,39 @@
         </StackPanel>
 
 
-        <StackPanel Grid.Row="1" Background="Orange">
-            
-            <Button Background="Orange">
-                <Image Source="\Images\IconTracs.png" Width="80" Height="80"/>
+        <UniformGrid Grid.Row="1" Rows="5" Width="80">
+
+            <Button DockPanel.Dock="Top" BorderThickness="0" Background="#0000">
+                
+                <Image Source="\Images\IconTracs.png"/>
             </Button>
 
-            <Button Background="Orange">
-                <Image Source="\Images\IconCargos.png" Width="80" Height="80"/>
+            <Button DockPanel.Dock="Top" BorderThickness="0" Background="#0000">
+                <Image Source="\Images\IconCargos.png"/>
             </Button>
 
-            <Button Background="Orange">
-                <Image Source="\Images\IconMessenger.png" Width="80" Height="80"/>
+            <Button DockPanel.Dock="Top" BorderThickness="0" Background="#0000">
+                <Image Source="\Images\IconMessenger.png"/>
             </Button>
 
-            <Button Background="Orange" Click="ButtonDocumentsCommand">
-                <Image Source="\Images\IconDocuments.png" Width="80" Height="80"/>
+            <Button DockPanel.Dock="Top" BorderThickness="0" Background="#0000" Click="ButtonDocumentsCommand">
+                <Image Source="\Images\IconDocuments.png"/>
             </Button>
 
-            <Button Background="Orange">
-                <Image Source="\Images\IconUsers.png" Width="80" Height="80"/>
+            <Button DockPanel.Dock="Top" BorderThickness="0" Background="#0000">
+                <Image Source="\Images\IconUsers.png"/>
             </Button>
 
-        </StackPanel>
+        </UniformGrid>
 
         <StackPanel Background="Orange" Grid.Column="1" Orientation="Horizontal">
 
         </StackPanel>
 
-        <Frame Grid.Column="1" Grid.Row="1" Name="Frame" NavigationUIVisibility="Hidden"/>
+        <Border Background="White"  CornerRadius="20,0,0,0" Grid.Row="1" Grid.Column="1" Padding="6">
+            <Frame Grid.Column="1" Grid.Row="1" Name="Frame" NavigationUIVisibility="Hidden"  />
+        </Border>
+        
 
     </Grid>
 </Window>

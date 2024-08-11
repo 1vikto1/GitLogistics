@@ -23,8 +23,7 @@ namespace Logistics
     {
         public MainWindow()
         {
-            InitializeComponent();
-            DataContext = new ClassMainWindow();
+            InitializeComponent(); 
             Frame.Navigate(new Pages.AuthorizationPage());
         }
     }
